@@ -36,7 +36,9 @@ class Game
 	def select_position
 
 		# space = grid_number - 1
-	 	board1.make_mark(@mark,@grid_number)
+		grid_number = gets.chomp.to_i
+		grid_number = grid_number - 1
+	 	board1.make_mark(@mark,grid_number)
 
 
 	end

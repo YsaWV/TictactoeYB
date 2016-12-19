@@ -64,13 +64,13 @@ def select_grid_position
 		Select grid posiiton
 
 		"""
-		puts """
+		# puts """
 
 
-		Select grid positon
+		# Select grid positon
 
-		"""
-		@grid_number = gets.chomp.to_i
+		# """
+		
 
 end
 
@@ -81,8 +81,8 @@ def win_by_diagonal?(mark)
 	(board[0] == mark && board[4] == mark && board[8] == mark) || (board[6] = mark && board[4] == mark && board[2] == mark)
 end
 
-def make_mark(mark, grid_number) #update positon, mark is either X or O
-	@grid_number = @grid_number - 1
+def make_mark(mark,grid_number) #update positon, mark is either X or O
+	
 	@board[grid_number.to_i] = @mark
 	print_board
 
