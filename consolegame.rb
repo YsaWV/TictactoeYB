@@ -10,6 +10,8 @@ class Game
 
 		@board1 = Boardtt.new
 
+	
+
 
 	end
 
@@ -34,18 +36,7 @@ class Game
 	def select_position
 
 		# space = grid_number - 1
-	 	#board1.make_mark(@mark,@grid_number)
-
-	 	puts """
-
-
-		Select grid positon
-
-		"""
-		n = gets.chomp.to_i
-
-
-		board1.make_mark(@mark,n)
+	 	board1.make_mark(@mark,@grid_number)
 
 
 	end
@@ -66,9 +57,10 @@ class Game
 
 		"""
 		n = gets.chomp.to_i
+		n = n - 1
 
 
-		board1.make_mark_two(@mark,n)
+		board1.make_mark(@mark,n)
 	end
 
 	
@@ -121,7 +113,7 @@ Game1.select_grid
 Game1.select_position
 Game1.select_gridtwo
 Game1.update_board
-Game1.update_board
+
 
 
 

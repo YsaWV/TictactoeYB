@@ -82,9 +82,13 @@ def win_by_diagonal?(mark)
 end
 
 def make_mark(mark, grid_number) #update positon, mark is either X or O
-	n = n - 1
-	@board[n.to_i] = @mark #where the mark goes to the space is for the position of the array
+	@grid_number = @grid_number - 1
+	@board[grid_number.to_i] = @mark
 	print_board
+
+	# n = n - 1
+	# @board[n.to_i] = @mark #where the mark goes to the space is for the position of the array
+	# print_board
 end
 
 def select_grid_position_two
@@ -113,13 +117,11 @@ end
 
 
 def make_mark_two(mark, grid_numbertwo)
-	# grid_numbertwo = grid_numbertwo - 1
-	# @board[grid_numbertwo.to_i] = @mark
-	# print_board
+	#
 
 
-	n = n - 1
-	@board[n.to_i] = @mark #where the mark goes to the space is for the position of the array
+	#ng = n - 1
+	@board[ng.to_i] = @mark #where the mark goes to the space is for the position of the array
 	print_board
 end
 
