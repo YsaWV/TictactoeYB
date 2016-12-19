@@ -1,5 +1,5 @@
 class Boardtt
-	attr_accessor :board, :mark, :grid_number
+	attr_accessor :board, :mark
 
 	def initialize
 
@@ -7,7 +7,7 @@ class Boardtt
 	@board = Array.new(9," ")
 	@mark = mark
 	#@space = space
-	@grid_number = grid_number
+	#@grid_number = grid_number
 	#@grid_numbertwo = grid_numbertwo
 end
 
@@ -61,7 +61,7 @@ def select_grid_position
 		_________
 		7 | 8 | 9
 
-		Select grid posiiton
+		Select grid position
 
 		"""
 		# puts """
@@ -81,15 +81,15 @@ def win_by_diagonal?(mark)
 	(board[0] == mark && board[4] == mark && board[8] == mark) || (board[6] = mark && board[4] == mark && board[2] == mark)
 end
 
-def make_mark(mark,grid_number) #update positon, mark is either X or O
+# def make_mark(mark,grid_number) #update positon, mark is either X or O
 	
-	@board[grid_number.to_i] = @mark
-	print_board
+# 	@board[grid_number.to_i] = @mark
+# 	print_board
 
-	# n = n - 1
-	# @board[n.to_i] = @mark #where the mark goes to the space is for the position of the array
-	# print_board
-end
+# 	# n = n - 1
+# 	# @board[n.to_i] = @mark #where the mark goes to the space is for the position of the array
+# 	# print_board
+# end
 
 def select_grid_position_two
 
@@ -105,6 +105,7 @@ def select_grid_position_two
 
 		"""
 		
+		#grid_numbertwo = gets.chomp.to_i
 
 end
 

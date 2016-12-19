@@ -1,4 +1,4 @@
-require_relative "tictactoe.rb"
+require_relative "tictactoev2.rb"
 
 
 class Game
@@ -15,35 +15,35 @@ class Game
 
 	end
 
-	def drawboard #empty board
+	def drawboard  #draw and empty board
 		board1.print_board
 
 	end
 
-	def select_marker #user choose X or O
+	def select_marker #user input: X or O
 
 		board1.select_mark
 
 	end
 
-	def select_grid #shows board with cell numbers
+	def select_grid #shows board location cell number and ask position
 
 		
 		board1.select_grid_position
 
 	end
 
-	def select_position #ask for cell number, subratract and print board with the new board[i] value X or O
+	# def select_position
 
-		# space = grid_number - 1
-		grid_number = gets.chomp.to_i
-		grid_number = grid_number - 1
-	 	board1.make_mark(@mark,grid_number)
+	# 	# space = grid_number - 1
+	# 	grid_number = gets.chomp.to_i
+	# 	grid_number = grid_number - 1
+	#  	board1.make_mark(@mark,grid_number)
 
 
-	end
+	# end
 
-	def select_gridtwo #re ask for another cell position
+	def select_gridtwo
 
 		
 		board1.select_grid_position_two
@@ -51,18 +51,18 @@ class Game
 	end
 
 
-	def update_board #gets the input of a cell position, reprint board with the X on the board
+	def update_board
 		puts """
 
 
-		Select grid position
+		Select grid positon
 
 		"""
 		n = gets.chomp.to_i
-		n = n - 1
+		ng = n - 1
 
 
-		board1.make_mark(@mark,n)
+		board1.make_mark_two(@mark,ng)
 	end
 
 	
@@ -112,7 +112,7 @@ Game1 = Game.new
 Game1.drawboard
 Game1.select_marker
 Game1.select_grid
-Game1.select_position
+
 Game1.select_gridtwo
 Game1.update_board
 Game1.update_board
