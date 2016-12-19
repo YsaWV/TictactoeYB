@@ -115,6 +115,7 @@ Game1.select_grid
 Game1.select_position
 Game1.select_gridtwo
 Game1.update_board
+Game1.update_board
 
 
 
