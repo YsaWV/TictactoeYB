@@ -34,16 +34,16 @@ class Game
 
 	end
 
-	def repeat_game
+	# def repeat_game
 
-		if drawboard == []
-			puts "end game"
-		else select_position(space)
-			#board1.draw_diagonal?
-			puts "win"
-		end
+	# 	if drawboard == []
+	# 		puts "end game"
+	# 	else select_position(space)
+	# 		#board1.draw_diagonal?
+	# 		puts "win"
+	# 	end
 	
-	end
+	# end
 
 
 # board1.win_by_diagonal("O")
@@ -53,9 +53,9 @@ class Game
 
 end
 
-Game1 = Game.new
-Game1.drawboard
-Game1.select_marker
-Game1.select_position(4)
-Game1.repeat_game
+# Game1 = Game.new
+# Game1.drawboard
+# Game1.select_marker
+# Game1.select_position(4)
+# Game1.repeat_game
 
