@@ -108,14 +108,14 @@ end
 # Game1.select_position(4)
 # Game1.repeat_game
 
-Game1 = Game.new
-Game1.drawboard
-Game1.select_marker
-Game1.select_grid
-Game1.select_position
-Game1.select_gridtwo
-Game1.update_board
-Game1.update_board
+# Game1 = Game.new
+# Game1.drawboard
+# Game1.select_marker
+# Game1.select_grid
+# Game1.select_position
+# Game1.select_gridtwo
+# Game1.update_board
+# Game1.update_board
 
 
 
